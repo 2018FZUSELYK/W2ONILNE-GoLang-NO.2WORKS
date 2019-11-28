@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>漂流瓶！</title>
+</head>
+<body>
+<form action="http://127.0.0.1:9090/login" method="post">
+    <style>
+        fieldset{
+            background-color: #f1f1f1;
+            border: none;
+            border-radius: 2px;
+            margin-bottom: 12px;
+            overflow: hidden;
+            padding: 0.625em;
+        }
+        label{
+            cursor: pointer;
+            display: inline-block;
+            padding: 3px 6px;
+            text-align: right;
+            width: 150px;
+            vertical-align: top;
+        }
+        input{
+            font-size: inherit;
+        }
+    </style>
+    <fieldset>
+        <p>
+            <label for="bottle">漂流瓶名称：</label>
+            <input type="text" id="bottle" name="bottle" align="left">
+        </p>
+        <p>
+            <label for="date">投递日期：</label>
+            <input type="date" id="date" name="date" align="left" dateFormate="yyyy-MM-dd">
+        </p>
+        <p>
+            <label for="name">投递人：</label>
+            <input type="text" id="author" name="author" align="left">
+        </p>
+        <p>
+            <label for="message">想说的话：</label>
+            <textarea id="message" name="message" cols="=50" rows="5" align="left"></textarea>
+        </p>
+        <p>
+            <input type="submit" value="扔进大海">
+            <input type="reset" value="我要重写">
+        </p>
+        <!--
+        <p>
+            <button onclick="window.location.href = 'bottle.html'">
+                查询其他瓶子
+            </button>
+        </p>
+        -->
+    </fieldset>
+
+</form>
+</body>
+</html>
+
+
